@@ -46,7 +46,7 @@ namespace NSPecor.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ID_NIVEL_TENSION,DESCRIPCION")] MUB_NIVEL_TENSION mub_nivel_tension)
+        public ActionResult Create([Bind(Include="DESCRIPCION")] MUB_NIVEL_TENSION mub_nivel_tension)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace NSPecor.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ID_NIVEL_TENSION,DESCRIPCION")] MUB_NIVEL_TENSION mub_nivel_tension)
+        public ActionResult Edit([Bind(Include="DESCRIPCION")] MUB_NIVEL_TENSION mub_nivel_tension)
         {
             if (ModelState.IsValid)
             {
