@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using NSPecor.Models;
+using Microsoft.AspNet.Identity;
 
 namespace NSPecor.Controllers
 {
@@ -17,6 +18,22 @@ namespace NSPecor.Controllers
         // GET: /NivelTension/
         public ActionResult Index()
         {
+            if (User.Identity.IsAuthenticated == false || GlobalVariables.Acceso("ADMIN") == false)
+            {
+                return RedirectToAction("../Home/Index/");
+            }
+            else
+            {
+                if (GlobalVariables.idUsuario == null || GlobalVariables.idUsuario == "" || GlobalVariables.idOrganizacion == null)
+                {
+                    var usr_actual = User.Identity.GetUserName();
+                    foreach (var item in db.MUB_USUARIOS.Where(u => u.EMAIL == usr_actual.ToString()))
+                    {
+                        GlobalVariables.idUsuario = item.ID_USUARIO.ToString();
+                        GlobalVariables.idOrganizacion = item.ID_ORGANIZACION.ToString();
+                    }
+                }
+            }
             return View(db.MUB_NIVEL_TENSION.ToList());
         }
 
