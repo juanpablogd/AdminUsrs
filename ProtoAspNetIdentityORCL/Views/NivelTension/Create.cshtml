@@ -13,8 +13,7 @@
     <div class="form-horizontal">
         <h4>NIVEL TENSIÓN</h4>
         <hr />
-@*        @Html.ValidationSummary(true) *@
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.ValidationSummary(true)
 
         <div class="form-group">
             @Html.LabelFor(model => model.DESCRIPCION, new { @class = "control-label col-md-2" })

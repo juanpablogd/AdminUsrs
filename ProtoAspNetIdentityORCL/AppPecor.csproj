@@ -209,10 +209,85 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BC_DP_SITIOS_UPME.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\GetFunctionByID.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\key.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MUB_CLASE_CP.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_ESTADO_SUB.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_FUENTES_CS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_GENERALES.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_GRUPOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_MODULOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_NIVEL_TENSION.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_ORGANIZACIONES.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_PECOR_CP_VSS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_PECOR_PLAN.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_PRIVILEGIOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_PROYECTOS_PECOR.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_ROL.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_ROL_PRIVILEGIOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_TENSION.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_TIPO_CP.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_TIPO_ORGANIZACION.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_TIPO_PROY_PECOR.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_UNIDADES.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_USUARIOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_USUARIOS_ORG.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_USUARIOS_ROLES.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_VSS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUH_PECOR_COBERTURA.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\pcMdl.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -229,6 +304,12 @@
       <DependentUpon>pcMdl.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\VISTA_BC_MPIO_DPTO.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VISTA_SUBESTACION.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

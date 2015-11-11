@@ -9,6 +9,7 @@
 warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="BC_DP_SITIOS_UPME">
           <Key>
+            
             <PropertyRef Name="ID_CENTRO_POBLADO" />
           </Key>
           <Property Name="OBJECTID" Type="number" Precision="38" Scale="0" Nullable="false" />
@@ -90,7 +91,7 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Key>
             <PropertyRef Name="ID_NIVEL_TENSION" />
           </Key>
-          <Property Name="ID_NIVEL_TENSION" Type="number" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="ID_NIVEL_TENSION" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="150" Nullable="false" />
         </EntityType>
         <EntityType Name="MUB_ORGANIZACIONES">
@@ -634,6 +635,7 @@ warning 6005: The data type 'st_geometry' is currently not supported for the tar
           <EntitySet Name="MUB_FUENTES_CS" EntityType="Self.MUB_FUENTES_CS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_GENERALES" EntityType="Self.MUB_GENERALES" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_MODULOS" EntityType="Self.MUB_MODULOS" Schema="MU" store:Type="Tables" />
+          <EntitySet Name="MUB_NIVEL_TENSION" EntityType="Self.MUB_NIVEL_TENSION" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_ORGANIZACIONES" EntityType="Self.MUB_ORGANIZACIONES" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_PECOR_CP_VSS" EntityType="Self.MUB_PECOR_CP_VSS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_PECOR_PLAN" EntityType="Self.MUB_PECOR_PLAN" Schema="MU" store:Type="Tables" />
@@ -658,12 +660,6 @@ warning 6005: The data type 'st_geometry' is currently not supported for the tar
 "MUB_GRUPOS"."ID_MODULO" AS "ID_MODULO", 
 "MUB_GRUPOS"."DESCRIPCION" AS "DESCRIPCION"
 FROM "MU"."MUB_GRUPOS" "MUB_GRUPOS"</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="MUB_NIVEL_TENSION" EntityType="Self.MUB_NIVEL_TENSION" store:Type="Tables" store:Schema="MU">
-            <DefiningQuery>SELECT 
-"MUB_NIVEL_TENSION"."ID_NIVEL_TENSION" AS "ID_NIVEL_TENSION", 
-"MUB_NIVEL_TENSION"."DESCRIPCION" AS "DESCRIPCION"
-FROM "MU"."MUB_NIVEL_TENSION" "MUB_NIVEL_TENSION"</DefiningQuery>
           </EntitySet>
           <EntitySet Name="MUB_UNIDADES" EntityType="Self.MUB_UNIDADES" store:Type="Tables" store:Schema="MU">
             <DefiningQuery>SELECT 
