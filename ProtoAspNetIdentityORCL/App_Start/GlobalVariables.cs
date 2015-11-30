@@ -9,7 +9,7 @@ namespace NSPecor.Controllers
 {
     public class GlobalVariables
     {
-        private const int cod_modulo = 5;
+        private const int cod_modulo = 2;
 
         // read-write variable
         public static string idUsuario
